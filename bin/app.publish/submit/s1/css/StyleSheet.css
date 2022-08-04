@@ -1,0 +1,134 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2ebe3;
+}
+
+.card {
+    width: 345px;
+    height: 613px;
+    border-radius: 12px;
+    background-color: white;
+    overflow: hidden;
+    margin: 68px auto;
+}
+
+.card__first-section__image {
+    width: 100%;
+}
+
+.card__second-section__product {
+    color: #6c7289;
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin: 18px 24px 8px 24px;
+}
+
+.card__second-section__title {
+    font-family: 'Fraunces', serif;
+    margin: 0 24px 16px 24px;
+    font-size: 2.2em;
+    color: #1c232b;
+    line-height: 34px;
+}
+
+.card__second-section__description {
+    margin: 0 24px 44px 24px;
+    color: #6c7289;
+    font-size: 0.95em;
+    line-height: 22px;
+}
+
+.card__second-section__price {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 0 24px 16px 24px;
+}
+
+.card__second-section__discount {
+    font-family: 'Fraunces', serif;
+    font-size: 2.3em;
+    color: #3c8067;
+}
+
+.card__second-section__value {
+    text-decoration: line-through;
+    color: #6c7289;
+}
+
+.card__second-section__button {
+    width: 296px;
+    height: 50px;
+    background-color: #3c8067;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+}
+
+    .card__second-section__button:hover {
+        cursor: pointer;
+        background-color: rgba(7, 59, 40, 0.925);
+    }
+
+.card__second-section__icon {
+    margin-right: 12px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+    .attribution a {
+        color: rgba(7, 59, 40, 0.925);
+        text-decoration: none;
+    }
+
+@media (min-width: 760px) {
+    .card {
+        width: 600px;
+        height: 450px;
+        display: flex;
+        margin: 175px auto 75px;
+    }
+
+    .card__first-section {
+        width: 300px;
+    }
+
+    .card__first-section__image {
+        content: url(../images/image-product-desktop.jpg);
+    }
+
+    .card__second-section {
+        width: 300px;
+    }
+
+    .card__second-section__product {
+        margin: 32px 24px 16px 24px;
+    }
+
+    .card__second-section__description {
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .card__second-section__price {
+        margin-bottom: 26px;
+    }
+
+    .card__second-section__button {
+        width: 240px;
+    }
+}

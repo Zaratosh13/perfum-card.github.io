@@ -1,0 +1,144 @@
+﻿$Darkcyan: hsl(158, 36%, 37%);
+$Darkgreen: hsla(158, 79%, 13%, 0.925);
+$Cream: hsl(30, 38%, 92%);
+
+$Verydarkblue: hsl(212, 21%, 14%);
+$Darkgrayishblue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $Cream;
+}
+
+.card {
+    width: 345px;
+    height: 613px;
+    border-radius: 12px;
+    background-color: $White;
+    overflow: hidden;
+    margin: 68px auto;
+
+    &__first-section__image {
+        width: 100%;
+    }
+}
+
+.card__second-section {
+    &__product {
+        color: $Darkgrayishblue;
+        font-size: 1em;
+        letter-spacing: 3px;
+        margin: 18px 24px 8px 24px;
+    }
+
+    &__title {
+        font-family: 'Fraunces', serif;
+        margin: 0 24px 16px 24px;
+        font-size: 2.2em;
+        color: $Verydarkblue;
+        line-height: 34px;
+    }
+
+    &__description {
+        margin: 0 24px 44px 24px;
+        color: $Darkgrayishblue;
+        font-size: 0.95em;
+        line-height: 22px;
+    }
+
+    &__price {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin: 0 24px 16px 24px;
+    }
+
+    &__discount {
+        font-family: 'Fraunces', serif;
+        font-size: 2.3em;
+        color: $Darkcyan;
+    }
+
+    &__value {
+        text-decoration: line-through;
+        color: $Darkgrayishblue;
+    }
+
+    &__button {
+        width: 296px;
+        height: 50px;
+        background-color: $Darkcyan;
+        border: none;
+        border-radius: 8px;
+        color: $White;
+        font-size: 1.1em;
+        font-weight: 700;
+        margin: auto;
+        display: block;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $Darkgreen;
+        }
+    }
+
+    &__icon {
+        margin-right: 12px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: $Darkgreen;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 760px) {
+    .card {
+        width: 600px;
+        height: 450px;
+        display: flex;
+        margin: 175px auto 75px;
+    }
+
+    .card__first-section {
+        width: 300px;
+
+        &__image {
+            content: url(../images/image-product-desktop.jpg);
+        }
+    }
+
+    .card__second-section {
+        width: 300px;
+
+        &__product {
+            margin: 32px 24px 16px 24px;
+        }
+
+        &__description {
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+
+        &__price {
+            margin-bottom: 26px;
+        }
+
+        &__button {
+            width: 240px;
+        }
+    }
+}
